@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  .tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+}
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: "Tinos", serif;
+}
+
+body {
+    box-sizing: border-box;
+    color: #08506f;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corDfundo {
+    width: 90%;
+    background-color: #D5F3FE;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5vw 2vw;
+    background-color: #9ecbde;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    width: 3vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 28%;
+    font-size: 1vw;
+}
+
+nav>a {
+    padding: 0 1vw 0 0;
+    color: #08506f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 4vw;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1vw 0 1.5vw 0;
+}
+
+#sobre div{
+    width: 70%;
+    margin: auto;
+}
+
+#sobre div p{
+    padding-bottom: .5vw;
+}
+
+#servicos div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10px;
+    justify-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+#servicos div img{
+    width: 75%;
+    height: 13vw;
+    object-fit: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 20px 1px;
+}
+
+#contato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 0;
+}
+
+form {
+    width: 50%;
+    border: 2px solid #19698A;
+    border-radius: .5vw;
+    box-shadow: 0 0 4px 4px gray;
+    padding: 1vw 2vw;
+    line-height: 3vw;
+    display: grid;
+}
+
+form h2{
+    margin: 0;
+}
+
+form div label{
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+
+form input{
+    border: 1px solid #08506f;
+    border-radius: .4vw;
+    padding: .1vw .3vw;
+    font-size: 1vw;
+    color: #08506f;
+}
+
+textarea{
+    width: 95%;
+    height: 15vw;
+    resize: none;
+    padding: .5vw 1vw;
+    border: none;
+    border-radius: .5vw;
+    box-shadow: 0 0 10px 0 #19698A;
+}
+
+.buttons{
+    margin: 1vw 0;
+    padding: 0.3vw .5vw;
+}
+
+.buttons button{
+    width: 11%;
+    background-color: #08506f;
+    padding: 0.3vw .5vw;
+    color: #D5F3FE;
+    border: 1px solid #08506f;
+    border-radius: .5vw;
+}
+
+textarea:focus{
+    outline: none;
+    border: none;
+}
+
+textarea::placeholder, input::placeholder{
+    color: #08506f;
+    font-weight: 700;
+}
+
+nav a:hover{
+    color: #D5F3FE;
+}
+
+.buttons button:hover{
+    background-color: #9ecbde;
+    color: #08506f;
+}
+
+#redes{
+    background-color: #08506f;
+    width: 100%;
+}
+
+#redes h2{
+    padding: 1.5vw 0 0 0;
+}
+
+.ul-redes{
+    display: flex
+    ;
+        padding: 2vw 1vw;
+        justify-content: space-around;
+        align-items: center;
+        margin: -2vw 0 0 0;
+}
+
+footer p{
+    color: #d5f2ff;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+}
