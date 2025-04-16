@@ -79,12 +79,12 @@ h2 {
     margin: 1vw 0 1.5vw 0;
 }
 
-#sobre div{
+#sobre div {
     width: 70%;
     margin: auto;
 }
 
-#sobre div p{
+#sobre div p {
     padding-bottom: .5vw;
 }
 
@@ -97,7 +97,7 @@ h2 {
     margin: auto;
 }
 
-#servicos div img{
+#servicos div img {
     width: 75%;
     height: 13vw;
     object-fit: cover;
@@ -123,16 +123,16 @@ form {
     display: grid;
 }
 
-form h2{
+form h2 {
     margin: 0;
 }
 
-form div label{
+form div label {
     font-weight: 700;
     font-size: 1.3vw;
 }
 
-form input{
+form input {
     border: 1px solid #08506f;
     border-radius: .4vw;
     padding: .1vw .3vw;
@@ -140,7 +140,7 @@ form input{
     color: #08506f;
 }
 
-textarea{
+textarea {
     width: 95%;
     height: 15vw;
     resize: none;
@@ -150,12 +150,12 @@ textarea{
     box-shadow: 0 0 10px 0 #19698A;
 }
 
-.buttons{
+.buttons {
     margin: 1vw 0;
     padding: 0.3vw .5vw;
 }
 
-.buttons button{
+.buttons button {
     width: 11%;
     background-color: #08506f;
     padding: 0.3vw .5vw;
@@ -164,50 +164,157 @@ textarea{
     border-radius: .5vw;
 }
 
-textarea:focus{
+textarea:focus {
     outline: none;
     border: none;
 }
 
-textarea::placeholder, input::placeholder{
+textarea::placeholder,
+input::placeholder {
     color: #08506f;
     font-weight: 700;
 }
 
-nav a:hover{
+nav a:hover {
     color: #D5F3FE;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     background-color: #9ecbde;
     color: #08506f;
 }
 
-#redes{
+#redes {
     background-color: #08506f;
     width: 100%;
 }
 
-#redes h2{
-    padding: 1.5vw 0 0 0;
+.ul-redes {
+    display: flex;
+    padding: 2vw 1vw;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.ul-redes{
-    display: flex
-    ;
-        padding: 2vw 1vw;
-        justify-content: space-around;
-        align-items: center;
-        margin: -2vw 0 0 0;
-}
-
-footer p{
+footer p {
     color: #d5f2ff;
 }
 
-.footer{
+.footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1vw 2vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: #d5f2ff;
+}
+
+footer a:hover {
+    color: #19698A;
+}
+
+@media (max-width: 575px) {
+    .banner img {
+        width: 100%;
+        margin-top: 7vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5vw 2vw;
+        background-color: #9ecbde;
+        position: fixed;
+        width: 96%;
+    }
+
+    header img {
+        width: 6%;
+    }
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: end;
+        font-size: 4vw;
+        gap: 1vw;
+    }
+
+    nav a {
+        padding: 1vw;
+        font-size: 2vw;
+    }
+
+    #sobre div p {
+        padding-bottom: .5vw;
+        text-align: justify;
+    }
+
+    form h2 {
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    textarea {
+        width: 95%;
+        height: 15vw;
+        resize: none;
+        padding: .5vw 1vw;
+        border: none;
+        border-radius: .5vw;
+        box-shadow: 0 0 10px 0 #19698A;
+        margin: 1vw 0;
+    }
+
+    .buttons button {
+        width: 17%;
+        background-color: #08506f;
+        padding: 0.3vw .5vw;
+        color: #D5F3FE;
+        border: 1px solid #08506f;
+        border-radius: .5vw;
+        font-size: 2vw;
+    }
+
+    form label,
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 2vw;
+    }
+
+    form div label {
+        font-weight: 700;
+        font-size: 2vw;
+    }
+
+    form {
+        width: 75%;
+        border: 2px solid #19698A;
+        border-radius: .5vw;
+        box-shadow: 0 0 4px 4px gray;
+        padding: 1vw 2vw;
+        line-height: 3vw;
+        display: grid;
+    }
+
+    form input {
+        border: 1px solid #08506f;
+        border-radius: .4vw;
+        color: #08506f;
+        width: 33%;
+        height: 2vw;
+        vertical-align: middle;
+    }
+
+    footer a,
+    footer p {
+        text-decoration: none;
+        color: #d5f2ff;
+        font-size: 2vw;
+    }
 }
