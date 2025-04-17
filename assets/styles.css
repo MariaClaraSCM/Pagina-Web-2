@@ -216,6 +216,13 @@ footer a:hover {
     color: #19698A;
 }
 
+.whatsap{
+    position: fixed;
+    bottom: 0vw;
+    width: 6vw;
+    right: 2vw;
+}
+
 @media (max-width: 575px) {
     .banner img {
         width: 100%;
@@ -316,5 +323,12 @@ footer a:hover {
         text-decoration: none;
         color: #d5f2ff;
         font-size: 2vw;
+    }
+
+    .whatsap {
+        position: fixed;
+        bottom: 0vw;
+        width: 8%;
+        right: 2vw;
     }
 }
